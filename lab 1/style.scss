@@ -1,0 +1,43 @@
+$btnSub:#ff3c00;
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.btn,
+.btn1 {
+    background: $btnSub;
+    color: white;
+    width: 49%;
+    border-width: 0px;
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+}
+
+.btn1 {
+    background-color: green;
+    margin-right: 2%;
+}
+
+.btn:hover,
+.btn1:hover {
+    background: #0075e2;
+}
+
+.field {
+    width: 93%;
+    margin-bottom: 1em;
+}
+
+input {
+    padding: 10px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff3c00;
+    outline: none;
+    border-width: 1px;
+}

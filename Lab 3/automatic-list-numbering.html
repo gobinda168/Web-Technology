@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ordered List</title>
+    <!-- <style>
+      #digit {
+        list-style-type: decimal;
+      }
+      #roman {
+        list-style-type: upper-roman;
+      }
+      #lowr-roman {
+        list-style-type: lower-roman;
+      }
+      #alpha {
+        list-style-type: lower-alpha;
+      }
+    </style> -->
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      .heading {
+        padding-left: 39px;
+      }
+      ol {
+        counter-reset: count;
+        list-style-type: none;
+      }
+
+      li:before {
+        content: "Chapter " counters(count, ".") ". ";
+        counter-increment: count;
+      }
+      ol ol li:before {
+        content: counters(count, ".") " ";
+      }
+      
+    </style>
+    <!-- <style>
+      ol: nth-child();
+    </style> -->
+  </head>
+
+  <body>
+    <div class="center">
+      <div class="heading">
+        <h2>Title: Web Technology</h2>
+        <h3>Table of Content</h3>
+      </div>
+      <ol>
+        <li>Introduction to Web</li>
+        <li>HTTP</li>
+        <li>HTML</li>
+        <li>
+          CSSS
+
+          <ol>
+            <li>Introduction</li>
+            <li>Advantages</li>
+            <li>
+              Adding style sheets
+              <ol>
+                <li>External</li>
+                <ol>
+                  <li>External style sheets are useful</li>
+                </ol>
+                <li>Inline</li>
+              </ol>
+            </li>
+            <li>Browser Incompitibility</li>
+          </ol>
+        </li>
+        <li>XML</li>
+      </ol>
+    </div>
+
+    <!-- <ol>
+      <li>Introduction to Web</li>
+      <li>HTTP</li>
+      <li>HTML</li>
+      <li>CSS</li>
+      <ol>
+        <li>Introduction</li>
+        <li>Advantages</li>
+        <li>Adding style sheets</li>
+        <ol>
+          <li>External</li>
+          <ol>
+            <li>External style sheets are useful</li>
+          </ol>
+          <li>Inline</li>
+        </ol>
+      </ol>
+      <ol>
+        <li>Browser Incompitibility</li>
+        <li>XML</li>
+      </ol>
+    </ol> -->
+  </body>
+</html>

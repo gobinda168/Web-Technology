@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="form.js" method="post">
+        <fieldset>
+          <legend>USER INFORMATION</legend>
+          <div class="form-ele">
+            <label for="name">Enter your fullname:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="field"
+              placeholder="Enter your name"
+            /><br />
+            <label for="email">Enter your email:</label>
+            <input
+              type="email"
+              name="email"
+              class="field"
+              id="email"
+              placeholder="Enter your email"
+            /><br />
+            <label for="password">Enter your password:</label>
+            <input
+              type="password"
+              name="password"
+              class="field"
+              id="pass"
+              placeholder="Enter your password"
+            /><br />
+            <label for="password1">Confirm your password:</label>
+            <input
+              type="password"
+              name="password1"
+              class="field"
+              id="pass1"
+              placeholder="Confirm your password"
+            /><br />
+            <label for="address">Enter your Address:</label>
+            <textarea
+              name="address"
+              class="field"
+              cols="30"
+              rows="10"
+              placeholder="Enter your Address"
+              style="width: 93%; padding: 10px"
+            ></textarea
+            ><br />
+
+            <label for="gender">Enter your gender:</label>
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+              checked
+            />Male
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />Female<br />
+
+            <input type="submit" value="SIGN UP" class="btn1" /><input
+              type="reset"
+              value="RESET"
+              class="btn"
+            />
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

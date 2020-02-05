@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WEB DESIGNING</title>
+    <style>
+      .wrapper {
+        display: grid;
+        grid-template-columns: 2fr, 1fr;
+      }
+      .wrapper > div {
+        background: #fd1c02;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form">
+        <form action="server.js" method="post">
+          <label for="cricket">Cricket</label>
+          <input
+            type="checkbox"
+            name="cricket"
+            id="cricket"
+            value="cricket"
+            checked
+          />
+          <input
+            type="checkbox"
+            name="football"
+            id="football"
+            value="football"
+          />
+        </form>
+      </div>
+      <div class="select">
+        <p>Select Country:</p>
+        <select name="country" id="reg_country">
+          <option value="India">India</option>
+          <option value="USA" selected>USA</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+1) Design an HTML page using css to display an ordered list as shown below:
+                        Title: Web Technology
+                        Table of content
+                        1.HTML
+                        2.css
+                            I.Introduction
+                            II.Adding Style Sheets 
+                                a.External
+                                    i.External style sheets are useful
+                                b.Inline
+                            III.Browser Incompatibility
+                        3.XML
+2) Design an HTML page to select a hyperlink when the mouse hovers over it. The hyperlink should have 
+the following display property:-
+(on load properties)
+    a) Display it in a block with width 260px
+    b) Margin (all 4) is 20px 
+    c) Left and top borders are of  width 1px and color is grey
+    d) Right and bottom border are of  width 2px and color is black.
+(on hover)
+    e) on mouse hover font color changes to white and background color changes to black

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Frame</title>
+    <style>
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: 2%;
+      }
+      .wrapper > iframe {
+        padding: 20px;
+        height: 700px;
+      }
+      .left {
+        background-color: violet;
+      }
+      .right {
+        background-color: blue;
+        color: red;
+      }
+      .middle {
+        background-color: pink;
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="iframe.html" target="_blank" rel="noopener noreferrer">IFrame</a>
+
+    <div class="wrapper">
+      <iframe src="framea.html" class="left" width="30%"> </iframe>
+      <iframe src="frameb.html" class="middle" width="20%"> </iframe>
+      <iframe src="framec.html" class="right" width="50%"> </iframe>
+    </div>
+  </body>
+</html>
