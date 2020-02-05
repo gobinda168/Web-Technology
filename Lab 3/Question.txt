@@ -19,3 +19,18 @@ the following display property:-
     d) Right and bottom border are of  width 2px and color is black.
 (on hover)
     e) on mouse hover font color changes to white and background color changes to black
+3)Design an HTML page using css to create the following table of content:
+                    Title: Web Technology
+                    Table of Content
+                    Chapter 1: Introduction to Web
+                    Chapter 2: HTTP
+                    Chapter 3: HTML
+                    Chapter 4: CSSS
+                            4.1 Introduction
+                            4.2 Advantages
+                            4.3 Adding style sheets
+                                4.3.1 External
+                                    4.3.1.1 External style sheets are useful
+                                4.3.2 Inline
+                            4.4 Browser Incompitibility
+                    Chapter 5: XML
