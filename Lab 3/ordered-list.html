@@ -3,20 +3,22 @@
   <head>
     <title>Ordered List</title>
     <!-- <style>
-      #digit {
-        list-style-type: decimal;
-      }
-      #roman {
+      
+      .ur li {
         list-style-type: upper-roman;
       }
-      #lowr-roman {
+      #lr li {
         list-style-type: lower-roman;
       }
-      #alpha {
+      #la li {
         list-style-type: lower-alpha;
       }
     </style> -->
     <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
       ol ol li {
         list-style-type: upper-roman;
       }
@@ -32,24 +34,28 @@
     </style> -->
   </head>
   <body>
-    <h2>Title: Web Technology</h2>
-    <h3>Table of Content</h3>
-    <ol>
-      <li>HTML</li>
-      <li>CSS</li>
+    <div class="center">
+      <div class="heading">
+        <h2>Title: Web Technology</h2>
+        <h3>Table of Content</h3>
+      </div>
       <ol>
-        <li>Introduction</li>
-        <li>Adding style sheets</li>
-        <ol>
-          <li>External</li>
-          <ol>
-            <li>External style sheets are useful</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <ol class="ur">
+          <li>Introduction</li>
+          <li>Adding style sheets</li>
+          <ol id="la">
+            <li>External</li>
+            <ol id="lr">
+              <li>External style sheets are useful</li>
+            </ol>
+            <li>Internal</li>
           </ol>
-          <li>Internal</li>
+          <li>Browser Incompatibility</li>
         </ol>
-        <li>Browser Incompatibility</li>
+        <li>XML</li>
       </ol>
-      <li>XML</li>
-    </ol>
+    </div>
   </body>
 </html>

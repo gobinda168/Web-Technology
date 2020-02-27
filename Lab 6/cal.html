@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>JS Devision and Multiplication</title>
+    <style>
+      .ct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30vh;
+        width: 40%;
+        padding: 50px;
+        transition: display 2s;
+      }
+
+      h3 {
+        background: linear-gradient(to right, #00c9ff, #92fe9d);
+        color: white;
+        font-size: x-large;
+        padding: 50px;
+        text-align: center;
+        font-weight: 700;
+        font-family: "Montserrat";
+        width: 40%;
+        margin-top: 30vh;
+        margin-left: 30vw;
+      }
+      p {
+        font-size: xx-small;
+        color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="row ct z-depth-4">
+      <div class="input-field col s12">
+        <input id="number" type="text" class="validate num" />
+        <label for="number">ENTER AxB OR A/B: </label>
+      </div>
+    </div>
+
+    <h3 class="z-depth-5">
+      RESULT: <span id="result"></span>
+      <p>CLOSE X</p>
+    </h3>
+    <button class="calculate-btn"></button>
+    <script src="./js-calculate.js"></script>
+  </body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TRANSITION</title>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30vh;
+      }
+      .btn {
+        background: #fd7c2a;
+        border: 3px solid #dc5801;
+        padding: 15px 50px;
+        color: white;
+        font-weight: 700;
+        font-size: x-large;
+        transition: background 1s, border 2s;
+      }
+      .btn:hover {
+        background: #3cc16e;
+        border: 3px solid #288049;
+      }
+      /*.img {
+        height: "300px";
+        width: "300px";
+        margin-top: 20px;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0),
+          rgba(0, 0, 0, 100),
+          url('https://cdn.pixabay.com/photo/2019/02/19/19/45/thumbs-up-4007573_960_720.png')
+        );
+      } */
+      div .img {
+        background-image: url("download.jpg");
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">Hover on me</button>
+
+    <div class="img"></div>
+    <!-- <img
+      src="https://cdn.pixabay.com/photo/2019/02/19/19/45/thumbs-up-4007573_960_720.png"
+      alt=""
+      srcset=""
+    /> -->
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      div {
+        width: 30vw;
+        margin: 30vh 0 0 30vw;
+        border: 1px solid salmon;
+        padding: 0 20px;
+      }
+      h3 {
+        border: 1px solid salmon;
+        padding: 10px;
+      }
+      span {
+        float: right;
+      }
+      button {
+        padding: 10px 30px;
+        background: blueviolet;
+        color: white;
+        border: none;
+        margin: 0 0 3vh 9vw;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h3>mm-dd-yy : <span id="cd"></span></h3>
+      <h3>mm/mm/yy : <span id="cd1"></span></h3>
+      <h3>dd-mm-yy : <span id="cd2"></span></h3>
+      <h3>dd/mm/yy : <span id="cd3"></span></h3>
+      <button onclick="currentDate()">Get Current Date</button>
+    </div>
+
+    <!-- <script src="./js-calculate.js"></script> -->
+    <script>
+      const currentDate = () => {
+        const t = new Date();
+        let dd = t.getDate(),
+          mm = t.getMonth() + 1,
+          yy = t.getFullYear();
+        mm = mm < 10 ? `0${mm}` : mm;
+        document.getElementById("cd").innerHTML = `${dd}-${mm} - ${yy}`;
+        document.getElementById("cd1").innerHTML = `${mm} /${dd} / ${yy}`;
+        document.getElementById("cd2").innerHTML = `${dd} - ${mm} - ${yy}`;
+        document.getElementById("cd3").innerHTML = `${dd} / ${mm} / ${yy}`;
+      };
+    </script>
+  </body>
+</html>
